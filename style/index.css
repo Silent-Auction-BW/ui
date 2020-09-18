@@ -58,7 +58,11 @@ table {
 }
 
 * {
-    box-sizing: border-box;
+	box-sizing: border-box;
+	color: var(--ivory)
+}
+body{
+	background-color: var(--dark-purple)
 }
 header{
 	display:flex;
@@ -80,11 +84,13 @@ header a{
 	font-size: 30px;
 	text-decoration: none;
 	margin-left: 2.5rem;
+	background-color: var(--blue-sapphire);
 }
 .main{
 	display: flex;
 	align-items: center;
-	border: 3px black solid;
+	border: 3px var(--rosewood) solid;
+	background-color: var(--blue-sapphire);
 	width: 60%;
 	margin: auto;
 	
@@ -102,5 +108,5 @@ header a{
 .main a{
 	font-size: 40px;
 	text-decoration: none;
-	background-color:var(--blue-sapphire);
+	background-color:var(--verdigris);
 }
