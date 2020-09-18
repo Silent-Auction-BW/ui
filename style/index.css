@@ -50,4 +50,40 @@ table {
 * {
     box-sizing: border-box;
 }
+header{
+	display:flex;
+	align-items: center;
+	justify-content: space-between;
+	width: 60%;
+	margin: auto;
+	
+}
+header img{
+	margin: 2% 0;
 
+}
+header nav{
+	margin: 2% 0;
+
+}
+header a{
+	font-size: 30px;
+	text-decoration: none;
+	margin-left: 2.5rem;
+}
+.main{
+	display: flex;
+	align-items: center;
+	border: 3px black solid;
+	width: 60%;
+	margin: auto;
+	
+}
+.main img{
+	margin: 2%;
+
+}
+.main div{
+	margin: 2%;
+
+}
