@@ -72,7 +72,6 @@ header{
 	align-items: center;
 	justify-content: space-between;
 	width: 1000px;
-	
 }
 header img{
 	margin: 2% 0;
@@ -80,6 +79,7 @@ header img{
 }
 header nav{
 	margin: 2% 0;
+	display:flex;
 }
 header a{
 	font-size: 30px;
@@ -122,6 +122,7 @@ header a{
 @media only screen and (max-width: 1030px) {
 	header{
 		width:100%;
+		padding: 0% 2.5%;
 	}
 	.sections{
 		width:100%;
@@ -133,9 +134,16 @@ header a{
 		max-width: 60%;
 	}
 }
-@media only screen and (max-width: 766px) {
+@media only screen and (max-width: 804px) {
 	header{
 		flex-direction: column;
+	}
+	header nav{
+		width: 100vw;
+		justify-content: space-evenly;
+	}
+	header a{
+		margin: 0;
 	}
 	.sections{
 		flex-direction: column;
@@ -149,8 +157,8 @@ header a{
 }
 @media only screen and (max-width: 561px) {
 	header nav{
-		display: flex;
 		flex-direction: column;
+		justify-content: flex-start;
 	}
 	header a{
 		margin-left: 0;
