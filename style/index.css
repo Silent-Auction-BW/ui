@@ -113,7 +113,7 @@ header a{
 	align-items: center;
 	font-size: 15px;
 }
-.sections a{
+.sections .signup{
 	margin-top: 4%;
 	font-size: 300%;
 	text-decoration: none;
@@ -129,6 +129,12 @@ footer{
 
 footer nav a{
 	padding: 15px .5rem;
+}
+.projectMembers{
+	display:flex; 
+	width: 100%;
+	justify-content: space-around;
+	margin: 2%;
 }
 
 
