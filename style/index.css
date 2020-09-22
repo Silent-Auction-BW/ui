@@ -119,6 +119,19 @@ header a{
 	text-decoration: none;
 	background-color:var(--verdigris);
 }
+footer{
+	display:flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	width: 1000px;
+}
+
+footer nav a{
+	padding: 15px .5rem;
+}
+
+
 @media only screen and (max-width: 1030px) {
 	header{
 		width:100%;
@@ -132,6 +145,9 @@ header a{
 	}
 	.sections img{
 		max-width: 60%;
+	}
+	footer{
+		width: 100%;
 	}
 }
 @media only screen and (max-width: 804px) {
@@ -168,5 +184,11 @@ header a{
 	}
 	.sections div{
 		font-size: 3.5vw;
+	}
+	footer p{
+		font-size: 3vw;
+	}
+	footer nav a{
+		font-size: 3vw;
 	}
 }
