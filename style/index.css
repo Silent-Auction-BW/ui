@@ -113,7 +113,7 @@ header a{
 	align-items: center;
 	font-size: 15px;
 }
-.sections a{
+.sections .signup{
 	margin-top: 4%;
 	font-size: 300%;
 	text-decoration: none;
@@ -129,6 +129,12 @@ footer{
 
 footer nav a{
 	padding: 15px .5rem;
+}
+.projectMembers{
+	display:flex; 
+	width: 100%;
+	justify-content: space-around;
+	margin: 2%;
 }
 
 
@@ -155,7 +161,7 @@ footer nav a{
 		flex-direction: column;
 	}
 	header nav{
-		width: 100vw;
+		width: 95vw;
 		justify-content: space-evenly;
 	}
 	header a{
@@ -175,12 +181,15 @@ footer nav a{
 	header nav{
 		flex-direction: column;
 		justify-content: flex-start;
+		align-items: center;
 	}
 	header a{
 		margin-left: 0;
+		margin-top: 2.5px;
 		text-align: center;
-		width: 100vw;
+		width: 90vw;
 		font-size: 8vw;
+		border-radius: 0px;
 	}
 	.sections div{
 		font-size: 3.5vw;
@@ -191,4 +200,7 @@ footer nav a{
 	footer nav a{
 		font-size: 3vw;
 	}
+}
+@media only screen and (max-width: 320px) {
+	
 }
