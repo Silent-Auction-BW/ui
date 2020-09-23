@@ -101,7 +101,7 @@ header a{
 
 }
 .sections img{
-	max-width: 90%;
+	max-width: 50%;
 	height: auto;
 	margin: 2%;
 	object-fit: contain;
@@ -111,7 +111,7 @@ header a{
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	font-size: 15px;
+	font-size: 20px;
 }
 .sections .signup{
 	margin-top: 4%;
@@ -150,7 +150,7 @@ footer nav a{
 		font-size: 1.9vw;
 	}
 	.sections img{
-		max-width: 60%;
+		max-width: 40%;
 	}
 	footer{
 		width: 100%;
@@ -172,6 +172,9 @@ footer nav a{
 	}
 	.sections div{
 		font-size: 2.5vw;
+	}
+	.sections img{
+		max-width: 55%;
 	}
 	#reverseOrder{
 		flex-direction: column-reverse;
