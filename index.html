@@ -9,18 +9,18 @@
 <body>
     <!--Header contains main website image, along with the nav bar-->
     <header>
-        <img src="img/silent_auction_logo_smaller.png"/>
+        <img src="img/silent_auction_logo_smaller.png"/ alt="Silent Auction Logo">
         <!--Nav bar contains links to all pages on website-->
-        <nav>
-            <a href="index.html">Home</a>
-            <a href="about.html">About</a>
-            <a href="#">Features</a>
-            <a href="#">Contact</a>
+        <nav role="menubar">
+            <a role="menuitem" href="index.html">Home</a>
+            <a role="menuitem" href="about.html">About</a>
+            <a role="menuitem" href="#">Features</a>
+            <a role="menuitem" href="#">Contact</a>
         </nav>
     </header>
     <!--Every section uses "sections" class which sets up the border, and flex attributes-->
-    <section class="sections">
-        <img src="./img/hammer_stock_png.png"/>
+    <section class="sections" role="main">
+        <img src="./img/hammer_stock_png.png" alt="Hammer and Gavel"/>
         <div>
             <p class="maininfo">
                 Silent Auction™ provide an easy way to participate in Silent Auctions from anywhere in the world! Using our patented "securebid" technology, you can be assured that your bids go through properly and without issue, as long as you have an internet connection. For sellers, this security ensures that you won't be getting fake bids like on our competitors sites, and can rest assured that any bids placed are real. Sign up today to see what's on offer, or sell something yourself! 
@@ -30,8 +30,8 @@
             </a>
         </div>
     </section>
-    <section class="sections">
-        <img src="./img/man_1_cropped.jpg"/>
+    <section class="sections" role="complementary">
+        <img src="./img/man_1_cropped.jpg" alt="First Reviewer"/>
         <div>
             <p class="maininfo">
                 "With the pandemic going around this year, I thought it'd be impossible to go back to any form of auctions ever again. But Silent Auction™ have shown me how much easier and accessible auctions can be, when done on the internet! I can definitely reccomend them!"
@@ -42,7 +42,7 @@
         </div>
     </section>
     <!-- The 'reverseOrder' id is used here to indicate that the image comes after the text here, so that way in CSS I can account for this when I reach the 804px breakpoint. That breakpoint makes the images go above the text in column, so for this section I make sure it goes column-reverse to account for the image being on the right-->
-    <section class="sections" id="reverseOrder">
+    <section class="sections" role="complementary" id="reverseOrder">
         <div>
             <p class="maininfo">
                 "Having recently come into possesion of some rare artworks and paintings, I have found Silent Auction™ to be the perfect way for me to safely and securely auction these off. The best part is that anyone in the world can participate, so I've found I made more profit taking this route as opposed to a traditional auction route. I can give them my full reccomendation!"
@@ -51,10 +51,10 @@
                 - Ben M.
             </p>
         </div>
-        <img src="./img/man_2_cropped.jpg"/>
+        <img src="./img/man_2_cropped.jpg" alt="Second Reviewer"/>
     </section>
     <!-- Footer just has a fake copyright and links to rest of the site that you could see at the top.-->
-    <footer>
+    <footer role="contentinfo">
         <p>Copyright Silent Auction Group 2020</p> 
         <nav>
             <a href="index.html">Home</a> |

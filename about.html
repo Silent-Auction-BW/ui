@@ -7,73 +7,74 @@
     <title>Silent Auction Marketing About</title>
 </head>
 <body>
+    <!--Header contains main website image, along with the nav bar-->
     <header>
-        <img src="img/silent_auction_logo_smaller.png"/>
+        <img src="img/silent_auction_logo_smaller.png" alt="Silent Auction Logo"/>
         <!--Nav bar contains links to all pages on website-->
-        <nav>
-            <a href="index.html">Home</a>
-            <a href="about.html">About</a>
-            <a href="#">Features</a>
-            <a href="#">Contact</a>
+        <nav role="menubar">
+            <a role="menuitem" href="index.html">Home</a>
+            <a role="menuitem" href="about.html">About</a>
+            <a role="menuitem" href="#">Features</a>
+            <a role="menuitem" href="#">Contact</a>
         </nav>
     </header>
     <!-- The 'aboutus' section is a section which follows the screen as you scroll up and down the page, i.e. it is static and stays in a fixed spot no matter how you scroll. It functions as a set of buttons that you can use to navigate the members of our group, and disappears when it runs out of space-->
     <section class="aboutus">
         <div>
-            <nav class="projectMembers">
-                <a href=#isaac><img src="https://dummyimage.com/75x75/000000/fff&text=Isaac"/></a>
-                <a href=#mychael><img src="https://dummyimage.com/75x75/000000/fff&text=Mychael"/></a>
-                <a href=#william><img src="https://dummyimage.com/75x75/000000/fff&text=William"/></a>
-                <a href=#nandy><img src="https://dummyimage.com/75x75/000000/fff&text=Nandy"/></a>
-                <a href=#mustafa><img src="https://dummyimage.com/75x75/000000/fff&text=Mustafa"/></a>
-                <a href=#ignacio><img src="https://dummyimage.com/75x75/000000/fff&text=Ignacio"/></a>
+            <nav class="projectMembers" role="menubar">
+                <a role="menuitem" href=#isaac><img src="https://dummyimage.com/75x75/000000/fff&text=Isaac" alt="Isaac"/></a>
+                <a role="menuitem" href=#mychael><img src="https://dummyimage.com/75x75/000000/fff&text=Mychael" alt="Mychael"/></a>
+                <a role="menuitem" href=#william><img src="https://dummyimage.com/75x75/000000/fff&text=William" alt="William"/></a>
+                <a role="menuitem" href=#nandy><img src="https://dummyimage.com/75x75/000000/fff&text=Nandy" alt="Nandy"/></a>
+                <a role="menuitem" href=#mustafa><img src="https://dummyimage.com/75x75/000000/fff&text=Mustafa" alt="Mustafa"/></a>
+                <a role="menuitem" href=#ignacio><img src="https://dummyimage.com/75x75/000000/fff&text=Ignacio" alt="Ignacio"/></a>
             </nav>
         </div>
     </section>
     <!-- This first section just gives a basic description of our group and what we did as a project.-->
-    <section class="sections">
+    <section class="sections" role="main">
         <div>
             <p class="maininfo">
                 Our group worked on the Silent Auction website, which allows for running auctions that can be bid on from anywhere in the world, completely over the internet. The group is made up of one unit 1 student, 2 unit 2s, 2 unit 3s, and 2 unit 4s. Below you will find more info about each of us, including relevant links.
             </p>
         </div>
     </section>
-    <!-- Each member of the project has a section with with the basic 'sections' class. I felt it made sense to keep it similar to the main page, but have each section represent a member this time. This makes the overall design simple and coherent.-->
-    <section class="sections" id="isaac">
-        <img src="https://dummyimage.com/250x250/000000/fff&text=Isaac"/>
+    <!-- Each member of the project has a section with with the basic 'sections' class. I felt it made sense to keep it similar to the main page, but have each section represent a member this time. This makes the overall design simple and coherent. Also, the ID for each allows for the aboutus nav menu to jump to each person-->
+    <section class="sections" id="isaac" role="region">
+        <img src="https://dummyimage.com/250x250/000000/fff&text=Isaac" alt="Isaac"/>
         <div>
             <p class="maininfo">
                 I am a programmer who has been learning coding since 2014, back in high school. Current languages I know include java, javascript, C#, and some react, but I'm always looking to learn more. Programming really is my passion and I can truly say it is some I enjoy even as a form of work. Looking to graduate from Lambda School within a year, but until then I'm going to keep practicing and learning. 
             </p>
             <section class="socials">
                 <a href="https://github.com/IsaacGHoward" target="_blank">
-                    <img src="img/github.png" class="social"/>
+                    <img src="img/github.png" class="social" role="link" alt="Github"/>
                 </a>
                 <a href="https://www.linkedin.com/in/isaac-g-h/" target="_blank">
-                    <img src="img/linkedin.png" class="social"/>
+                    <img src="img/linkedin.png" class="social" role="link" alt="LinkedIn"/>
                 </a>
             </section>
             
         </div>
     </section>
-    <section class="sections" id="mychael">
-        <img src="img/members/mychael_m.png"/>
+    <section class="sections" id="mychael" role="region">
+        <img src="img/members/mychael_m.png" alt="Mychael"/>
         <div>
             <p class="maininfo">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. In tortor nibh, gravida sit amet feugiat sed, lacinia non nulla. Vivamus quis metus odio. Donec ultrices nunc nulla, at convallis erat luctus eu. Vivamus nisl nisi, luctus at erat hendrerit, rutrum sodales lacus. Nam mattis vehicula massa quis tristique. Cras posuere urna lectus, congue egestas quam tristique sed. Pellentesque eget enim at purus molestie bibendum at ut lacus. Phasellus laoreet nulla cursus risus cursus, eu scelerisque massa mollis. Curabitur vitae volutpat leo. Nunc ultricies, sem vel dignissim blandit, massa nibh pellentesque tortor, eget maximus ipsum velit at elit.
             </p>
             <section class="socials">
                 <a href="https://github.com/MychaelM" target="_blank">
-                    <img src="img/github.png" class="social"/>
+                    <img src="img/github.png" class="social" role="link" alt="Github"/>
                 </a>
                 <a href="https://www.linkedin.com/in/mychaelbmenges/" target="_blank">
-                    <img src="img/linkedin.png" class="social"/>
+                    <img src="img/linkedin.png" class="social" role="link" alt="LinkedIn"/>
                 </a>
             </section>
         </div>
     </section>
-    <section class="sections" id="william">
-        <img src="img/members/william_w.jpg"/>
+    <section class="sections" id="william" role="region">
+        <img src="img/members/william_w.jpg" alt="William"/>
         <div>
             <p class="maininfo">
                 I have a love for computer techs. I am fascinated by the internet, and what it can do!
@@ -83,60 +84,60 @@
             </p>
             <section class="socials">
                 <a href="https://github.com/weng7533" target="_blank">
-                    <img src="img/github.png" class="social"/>
+                    <img src="img/github.png" class="social" role="link" alt="Github"/>
                 </a>
                 <a href="https://www.linkedin.com/in/william-weng-513b26178/" target="_blank">
-                    <img src="img/linkedin.png" class="social"/>
+                    <img src="img/linkedin.png" class="social" role="link" alt="LinkedIn"/>
                 </a>
             </section>
         </div>
     </section>
-    <section class="sections" id="nandy">
-        <img src="img/members/nandy_m.jpg"/>
+    <section class="sections" id="nandy" role="region">
+        <img src="img/members/nandy_m.jpg" alt="Nandy"/>
         <div>
             <p class="maininfo">
                 Experienced Web Developer with a demonstrated history of working in the e-learning industry. Skilled in SQL, Web Applications, Front-end Development, Responsive Web Design, and HTML. Strong engineering professional with a Master's degree focused in Information Technology from Anna University. 
             </p>
             <section class="socials">
                 <a href="https://github.com/Nandhini-Madan" target="_blank">
-                    <img src="img/github.png" class="social"/>
+                    <img src="img/github.png" class="social" role="link" alt="Github"/>
                 </a>
                 <a href="https://www.linkedin.com/in/nandhinimadan/" target="_blank">
-                    <img src="img/linkedin.png" class="social"/>
+                    <img src="img/linkedin.png" class="social" role="link" alt="LinkedIn"/>
                 </a>
             </section>
         </div>
     </section>
-    <section class="sections" id="mustafa">
-        <img src="img/members/mustafa_h.png"/>
+    <section class="sections" id="mustafa" role="region">
+        <img src="img/members/mustafa_h.png" alt="Mustafa"/>
         <div>
             <p class="maininfo">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. In tortor nibh, gravida sit amet feugiat sed, lacinia non nulla. Vivamus quis metus odio. Donec ultrices nunc nulla, at convallis erat luctus eu. Vivamus nisl nisi, luctus at erat hendrerit, rutrum sodales lacus. Nam mattis vehicula massa quis tristique. Cras posuere urna lectus, congue egestas quam tristique sed. Pellentesque eget enim at purus molestie bibendum at ut lacus. Phasellus laoreet nulla cursus risus cursus, eu scelerisque massa mollis. Curabitur vitae volutpat leo. Nunc ultricies, sem vel dignissim blandit, massa nibh pellentesque tortor, eget maximus ipsum velit at elit.
             </p>
             <section class="socials">
                 <a href="https://github.com/MustafaCajib" target="_blank">
-                    <img src="img/github.png" class="social"/>
+                    <img src="img/github.png" class="social" role="link" alt="Github"/>
                 </a>
             </section>
         </div>
     </section>
-    <section class="sections" id="ignacio">
-        <img src="/img/members/ignacio_o.jpg"/>
+    <section class="sections" id="ignacio" role="region">
+        <img src="/img/members/ignacio_o.jpg" alt="Ignacio"/>
         <div>
             <p class="maininfo">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. In tortor nibh, gravida sit amet feugiat sed, lacinia non nulla. Vivamus quis metus odio. Donec ultrices nunc nulla, at convallis erat luctus eu. Vivamus nisl nisi, luctus at erat hendrerit, rutrum sodales lacus. Nam mattis vehicula massa quis tristique. Cras posuere urna lectus, congue egestas quam tristique sed. Pellentesque eget enim at purus molestie bibendum at ut lacus. Phasellus laoreet nulla cursus risus cursus, eu scelerisque massa mollis. Curabitur vitae volutpat leo. Nunc ultricies, sem vel dignissim blandit, massa nibh pellentesque tortor, eget maximus ipsum velit at elit.
             </p>
             <section class="socials">
                 <a href="https://github.com/ignaciocampo" target="_blank">
-                    <img src="img/github.png" class="social"/>
+                    <img src="img/github.png" class="social" role="link" alt="Github"/>
                 </a>
                 <a href="https://www.linkedin.com/in/ignacio-ocampo-rivas-7aa4701aa/" target="_blank">
-                    <img src="img/linkedin.png" class="social"/>
+                    <img src="img/linkedin.png" class="social" role="link" alt="LinkedIn"/>
                 </a>
             </section>
         </div>
     </section>
-    <footer>
+    <footer role="contentinfo">
         <p>Copyright Silent Auction Group 2020</p> 
         <nav>
             <a href="index.html">Home</a> |
