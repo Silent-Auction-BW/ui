@@ -90,7 +90,11 @@ header a{
 	border-radius: 15px;
 	border: 2px var(--ivory) solid
 }
-
+.quoteAttr{
+	margin-top: 1%;
+	margin-right: 3%;
+	align-self: flex-end;
+}
 .sections{
 	margin: 1%;
 	display: flex;
@@ -101,17 +105,32 @@ header a{
 
 }
 .sections img{
-	max-width: 90%;
+	max-width: 50%;
 	height: auto;
 	margin: 2%;
 	object-fit: contain;
+	border: 5px var(--rosewood) inset
+}
+.sections .social{
+	border:none;
+}
+.sections .socials{
+	display: flex;
+}
+.sections .socials a{
+	height: 32px;
+	width: 32px;
+	margin: 5%;
+}
+.sections .socials .social{
+	max-width: 100%;
 }
 .sections div{
 	margin: 2%;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	font-size: 15px;
+	font-size: 20px;
 }
 .sections .signup{
 	margin-top: 4%;
@@ -135,8 +154,21 @@ footer nav a{
 	width: 100%;
 	justify-content: space-around;
 	margin: 2%;
+	flex-direction: column;
+}
+.aboutus{
+	right: 1%;
+	top: 35%;
+	position: fixed;
 }
 
+
+
+@media only screen and (max-width: 1200px) {
+	.aboutus{
+		display: none;
+	}
+}
 
 @media only screen and (max-width: 1030px) {
 	header{
@@ -150,7 +182,7 @@ footer nav a{
 		font-size: 1.9vw;
 	}
 	.sections img{
-		max-width: 60%;
+		max-width: 40%;
 	}
 	footer{
 		width: 100%;
@@ -173,6 +205,9 @@ footer nav a{
 	.sections div{
 		font-size: 2.5vw;
 	}
+	.sections img{
+		max-width: 55%;
+	}
 	#reverseOrder{
 		flex-direction: column-reverse;
 	}
@@ -194,6 +229,10 @@ footer nav a{
 	.sections div{
 		font-size: 3.5vw;
 	}
+	.sections .socials a{
+		height: 7.5vw;
+		width: 7.5vw;
+	}
 	footer p{
 		font-size: 3vw;
 	}
@@ -201,6 +240,4 @@ footer nav a{
 		font-size: 3vw;
 	}
 }
-@media only screen and (max-width: 320px) {
-	
-}
+
