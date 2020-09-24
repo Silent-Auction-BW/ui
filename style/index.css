@@ -111,6 +111,20 @@ header a{
 	object-fit: contain;
 	border: 5px var(--rosewood) inset
 }
+.sections .social{
+	border:none;
+}
+.sections .socials{
+	display: flex;
+}
+.sections .socials a{
+	height: 32px;
+	width: 32px;
+	margin: 5%;
+}
+.sections .socials .social{
+	max-width: 100%;
+}
 .sections div{
 	margin: 2%;
 	display: flex;
@@ -149,6 +163,8 @@ footer nav a{
 .aboutus .projectMembers{
 	flex-direction: column;
 }
+
+
 @media only screen and (max-width: 1200px) {
 	.aboutus{
 		display: none;
@@ -213,6 +229,10 @@ footer nav a{
 	}
 	.sections div{
 		font-size: 3.5vw;
+	}
+	.sections .socials a{
+		height: 7.5vw;
+		width: 7.5vw;
 	}
 	footer p{
 		font-size: 3vw;
