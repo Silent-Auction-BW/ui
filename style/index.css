@@ -141,7 +141,19 @@ footer nav a{
 	justify-content: space-around;
 	margin: 2%;
 }
-
+.aboutus{
+	right: 1%;
+	top: 35%;
+	position: fixed;
+}
+.aboutus .projectMembers{
+	flex-direction: column;
+}
+@media only screen and (max-width: 1200px) {
+	.aboutus{
+		display: none;
+	}
+}
 
 @media only screen and (max-width: 1030px) {
 	header{
@@ -209,6 +221,4 @@ footer nav a{
 		font-size: 3vw;
 	}
 }
-@media only screen and (max-width: 320px) {
-	
-}
+
