@@ -154,15 +154,14 @@ footer nav a{
 	width: 100%;
 	justify-content: space-around;
 	margin: 2%;
+	flex-direction: column;
 }
 .aboutus{
 	right: 1%;
 	top: 35%;
 	position: fixed;
 }
-.aboutus .projectMembers{
-	flex-direction: column;
-}
+
 
 
 @media only screen and (max-width: 1200px) {
