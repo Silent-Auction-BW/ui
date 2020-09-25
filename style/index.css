@@ -56,6 +56,15 @@ table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }
+/* END CSS RESET */
+.projectRole{
+	letter-spacing: .25vw;
+	font-weight: 700;
+	padding: 1%;
+	margin: 1%;
+	border: 1px solid var(--dark-purple);
+	background-color: var(--rosewood);
+}
 
 * {
 	box-sizing: border-box;
@@ -81,6 +90,10 @@ header nav{
 	margin: 2% 0;
 	display:flex;
 }
+@keyframes navAnim {
+	from {background-color: var(--blue-sapphire); color:var(--ivory)}
+	to {background-color: var(--verdigris); color:var(--rosewood)}
+  }
 header a{
 	font-size: 30px;
 	text-decoration: none;
@@ -88,7 +101,10 @@ header a{
 	background-color: var(--blue-sapphire);
 	padding: 12px;
 	border-radius: 15px;
-	border: 2px var(--ivory) solid
+	border: 2px var(--ivory) outset;
+}
+header a:hover{
+	animation: navAnim 1s ease-out 0s infinite alternate;
 }
 .quoteAttr{
 	margin-top: 1%;
@@ -105,11 +121,13 @@ header a{
 
 }
 .sections img{
-	max-width: 50%;
 	height: auto;
 	margin: 2%;
 	object-fit: contain;
 	border: 5px var(--rosewood) inset
+}
+#hammerImg{
+	max-width: 50%;
 }
 .sections .social{
 	border:none;
@@ -136,7 +154,11 @@ header a{
 	margin-top: 4%;
 	font-size: 300%;
 	text-decoration: none;
-	background-color:var(--verdigris);
+	background-color:var(--blue-sapphire);
+	padding: 1.5%;
+	border-radius: 10px;
+	font-weight: 600;
+	border: 5px outset var(--verdigris)
 }
 footer{
 	display:flex;
@@ -181,7 +203,7 @@ footer nav a{
 	.sections div{
 		font-size: 1.9vw;
 	}
-	.sections img{
+	#hammerImg{
 		max-width: 40%;
 	}
 	footer{
@@ -205,7 +227,7 @@ footer nav a{
 	.sections div{
 		font-size: 2.5vw;
 	}
-	.sections img{
+	#hammerImg{
 		max-width: 55%;
 	}
 	#reverseOrder{
@@ -232,6 +254,9 @@ footer nav a{
 	.sections .socials a{
 		height: 7.5vw;
 		width: 7.5vw;
+	}
+	.sections img{
+		max-width: 75%;
 	}
 	footer p{
 		font-size: 3vw;
