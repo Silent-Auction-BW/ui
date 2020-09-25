@@ -57,15 +57,7 @@ table {
 	border-spacing: 0;
 }
 /* END CSS RESET */
-.projectRole{
-	letter-spacing: .25vw;
-	font-weight: 700;
-	padding: 1%;
-	margin: 1%;
-	border: 1px solid var(--dark-purple);
-	background-color: var(--rosewood);
-}
-
+/*General CSS, used on both pages*/
 * {
 	box-sizing: border-box;
 	color: var(--ivory);
@@ -76,6 +68,7 @@ body{
 	flex-direction: column;
     align-items: center;
 }
+/*Header CSS, used on both pages*/
 header{
 	display:flex;
 	align-items: center;
@@ -90,10 +83,11 @@ header nav{
 	margin: 2% 0;
 	display:flex;
 }
+/*Animation for the header links*/
 @keyframes navAnim {
 	from {background-color: var(--blue-sapphire); color:var(--ivory)}
 	to {background-color: var(--verdigris); color:var(--rosewood)}
-  }
+}
 header a{
 	font-size: 30px;
 	text-decoration: none;
@@ -106,11 +100,8 @@ header a{
 header a:hover{
 	animation: navAnim 1s ease-out 0s infinite alternate;
 }
-.quoteAttr{
-	margin-top: 1%;
-	margin-right: 3%;
-	align-self: flex-end;
-}
+/*End of header stuff*/
+/*Section related CSS, which is used for all the main page section on index and about*/
 .sections{
 	margin: 1%;
 	display: flex;
@@ -118,7 +109,6 @@ header a:hover{
 	border: 3px var(--rosewood) solid;
 	background-color: var(--blue-sapphire);
 	width: 1000px;
-
 }
 .sections img{
 	height: auto;
@@ -160,6 +150,8 @@ header a:hover{
 	font-weight: 600;
 	border: 5px outset var(--verdigris)
 }
+/*End of main section code*/
+/*Footer code, used on all pages*/
 footer{
 	display:flex;
 	flex-direction: column;
@@ -167,10 +159,26 @@ footer{
 	justify-content: center;
 	width: 1000px;
 }
-
 footer nav a{
 	padding: 15px .5rem;
 }
+/*End footer code*/
+/*quoteAttr is used for the fake quotes on the index.html*/
+.quoteAttr{
+	margin-top: 1%;
+	margin-right: 3%;
+	align-self: flex-end;
+}
+/*projectRole is used for the project roles on about.html*/
+.projectRole{
+	letter-spacing: .25vw;
+	font-weight: 700;
+	padding: 1%;
+	margin: 1%;
+	border: 1px solid var(--dark-purple);
+	background-color: var(--rosewood);
+}
+/*These two elements create the UI that follows the screen scrolling, that allows you to jump around about.html*/
 .projectMembers{
 	display:flex; 
 	width: 100%;
@@ -185,13 +193,13 @@ footer nav a{
 }
 
 
-
+/*All this media query does is get rid of that menu that follows the scroll on about*/
 @media only screen and (max-width: 1200px) {
 	.aboutus{
 		display: none;
 	}
 }
-
+/*This screen width gets rid of the margin and padding around the sections, and stretches everything to screen width*/
 @media only screen and (max-width: 1030px) {
 	header{
 		width:100%;
@@ -210,6 +218,7 @@ footer nav a{
 		width: 100%;
 	}
 }
+/*This screen width re arranges the header, and all the sections are oritented in a column as opposed to a row*/
 @media only screen and (max-width: 804px) {
 	header{
 		flex-direction: column;
@@ -230,10 +239,12 @@ footer nav a{
 	#hammerImg{
 		max-width: 55%;
 	}
+	/*Special exception made for sections that put the image on the right as opposed to the left*/
 	#reverseOrder{
 		flex-direction: column-reverse;
 	}
 }
+/*This final media query makes the nav links orient in column, and resizes some stuff */
 @media only screen and (max-width: 561px) {
 	header nav{
 		flex-direction: column;
